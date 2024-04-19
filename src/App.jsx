@@ -1,6 +1,5 @@
 import "./App.css";
 import About from "./components/About/About";
-import Navbar from "./components/Navbar/Navbar";
 import Service from "./components/service/Service";
 import Aboutpage from "./components/Aboutpage/Aboutpage";
 import MyWork from "./components/MyWork/MyWork";
@@ -14,6 +13,7 @@ function App() {
         <Aboutpage />
         <About />
         <Service />
+        <MyWork />
       </div>
     </>
   );
