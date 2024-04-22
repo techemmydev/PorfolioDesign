@@ -6,7 +6,7 @@
     gap: 80px;
     margin: 80px 170px;
 }
-.conatct-title{
+.contact-title{
     position: relative;
 }
 .contact-title h1{
@@ -16,8 +16,8 @@
 }
 .contact-title img{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 35px;
+    right: 10px;
     z-index: -1;
 }
 .contact-section{
