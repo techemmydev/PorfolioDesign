@@ -17,27 +17,29 @@ const Navbar = () => {
       <img src={logo} alt="" />
       <ul className="nav-menu">
         <li>
-          <p onClick={() => setMenu("home")}>Home</p>
+          <p onClick={() => scrollTo(200)}>Home</p>
           {menu === "home" ? <img src={underline} alt="" /> : <></>}
         </li>
         <li>
-          <p onClick={() => setMenu("about")}>About me</p>
+          <p onClick={() => scrollTo(950)}>About me</p>
           {menu === "about" ? <img src={underline} alt="" /> : <></>}
         </li>
         <li>
-          <p onClick={() => scrollTo(1900)}>Services</p>
-          {menu === "" ? <img src={underline} alt="" /> : <></>}
+          <p onClick={() => scrollTo(1920)}>Services</p>
+          {menu === "services" ? <img src={underline} alt="" /> : <></>}
         </li>
         <li>
-          <p onClick={() => setMenu("work")}>Portfolio</p>
+          <p onClick={() => scrollTo(3000)}>Portfolio</p>
           {menu === "work" ? <img src={underline} alt="" /> : <></>}
         </li>
         <li>
-          <p onClick={() => scrollTo(3000)}>Contact</p>
-          {menu === "" ? <img src={underline} alt="" /> : <></>}
+          <p onClick={() => scrollTo(4400)}>Contact</p>
+          {menu === "contact" ? <img src={underline} alt="" /> : <></>}
         </li>
       </ul>
-      <div className="nav-connect">connect with me</div>
+      <div className="nav-connect" onClick={() => scrollTo(5300)}>
+        connect with me
+      </div>
     </div>
   );
 };
