@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Aboutpage.css";
 import profile_img from "/imageFolder/profile_img.svg";
+import { init } from "ityped";
 const Aboutpage = () => {
+  const textRef = useRef();
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: false,
+      backDelay: 1500,
+      backSpeed: 60,
+      strings: ["Frontend Developer", "Designer", "Freelancers"],
+    });
+  }, []);
   return (
     <div id="home" className="hero">
       <img src={profile_img} alt="" />
-      <h1>
-        <span>I'm Alex Bennett</span> , frontend developer based in usa
-      </h1>
+      <h1>I'm Olawunmi Olatunji based in Nigeria</h1>
       <p>
-        I, am a frontend developer from california, usa with 10 years of
-        expreince in multiple companies like Microssoft, Tesla and Apple
+        I,m a <span ref={textRef}></span> with 2 years of expreince in multiple
+        companies like the Bulb Africa, Eschool
       </p>
       <div className="hero-action">
         <div className="hero-connect">connect with me</div>

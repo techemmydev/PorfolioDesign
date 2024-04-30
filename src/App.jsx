@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Aboutpage />
         <About />
-        <Service />
+        {/* <Service /> */}
         <MyWork />
         <Contact />
         <Footer />
@@ -22,5 +22,6 @@ function App() {
     </>
   );
 }
+// e9c5c15d-a128-461b-8794-58c846829f33
 
 export default App;

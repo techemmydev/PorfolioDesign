@@ -8,9 +8,12 @@ const Footer = () => {
     <div id="footer" className="footer">
       <div className="footer-top">
         <div className="footer-top-left">
-          <img src={footer_logo} alt="" />
+          {/* <img src={footer_logo} alt="" /> */}
+          <div className="myname">
+            <h1>Olawunmi</h1>
+          </div>
           <p>
-            I am a frontend developer from Nigeria with 10 years of experience
+            I am a frontend developer from Nigeria with 2 years of experience
           </p>
         </div>
         <div className="footer-top-right">
@@ -27,9 +30,9 @@ const Footer = () => {
           &#169; 2024 Beejay Ola. All rights and reserved.
         </p>
         <div className="footer-bottom-right">
-          <p>Term of Services</p>
-          <p>Privacy Policy</p>
-          <p>Connect With me</p>
+          <p>08065592378</p>
+          <p>Email address</p>
+          <p>github Address</p>
         </div>
       </div>
     </div>

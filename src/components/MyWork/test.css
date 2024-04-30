@@ -1,0 +1,41 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mywork-title h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mywork-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.mywork-container img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.mywork-container .active {
+  opacity: 1;
+}
+
+.mywork-showmore {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.mywork-showmore p:hover {
+  text-decoration: underline;
+}
