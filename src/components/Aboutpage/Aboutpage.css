@@ -5,7 +5,12 @@
   justify-content: center;
   gap: 35px;
 }
-
+.about-text {
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+  line-height: 40px;
+}
 .ityped-cursor {
   opacity: 1;
 
@@ -71,6 +76,14 @@
   .hero {
     justify-content: center;
     gap: 30px;
+  }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
   }
   .hero img {
     margin-top: 100px;

@@ -1,4 +1,4 @@
-import theme_pattern from "/imageFolder/theme_pattern.svg";
+// import theme_pattern from "/imageFolder/theme_pattern.svg";
 import mail_icon from "/imageFolder/mail_icon.svg";
 import call_icon from "/imageFolder/call_icon.svg";
 import location_icon from "/imageFolder/location_icon.svg";

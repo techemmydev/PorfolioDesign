@@ -43,10 +43,10 @@ const Navbar = () => {
           <p onClick={() => scrollTo(950, "about")}>About me</p>
           {menu === "about" ? <img src={underline} alt="" /> : <></>}
         </li>
-        <li>
+        {/* <li>
           <p onClick={() => scrollTo(1920, "services")}>Services</p>
           {menu === "services" ? <img src={underline} alt="" /> : <></>}
-        </li>
+        </li> */}
         <li>
           <p onClick={() => scrollTo(3000, "work")}>Portfolio</p>
           {menu === "work" ? <img src={underline} alt="" /> : <></>}

@@ -1,9 +1,31 @@
 import React from "react";
 import "./footer.css";
-import footer_logo from "../../../public/imageFolder/footer_logo.svg";
-import user_icon from "../../../public/imageFolder/user_icon.svg";
+import footer_logo from "/imageFolder/footer_logo.svg";
+import user_icon from "/imageFolder/user_icon.svg";
 
 const Footer = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "e9c5c15d-a128-461b-8794-58c846829f33");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      alert(" your Email was Successfully sent ", res);
+    }
+  };
   return (
     <div id="footer" className="footer">
       <div className="footer-top">
@@ -17,11 +39,15 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-top-right">
-          <div className="footer-email-input">
-            <img src={user_icon} alt="" />
-            <input type="text" placeholder="Enter you email" />
-          </div>
-          <div className="footer-subscribe">Subscribe</div>
+          <form action="  " onSubmit={onSubmit}>
+            <div className="footer-email-input">
+              <img src={user_icon} alt="" />
+              <input type="text" placeholder="Enter you email" />
+            </div>
+            <button type="submit" className="contact-submit">
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
       <hr />
