@@ -1,4 +1,3 @@
-// import theme_pattern from "/imageFolder/theme_pattern.svg";
 import mail_icon from "/imageFolder/mail_icon.svg";
 import call_icon from "/imageFolder/call_icon.svg";
 import location_icon from "/imageFolder/location_icon.svg";
@@ -9,7 +8,7 @@ const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "e9c5c15d-a128-461b-8794-58c846829f33");
+    formData.append("access_key", "1a7580f3-2d51-4bb8-b64a-bf5778a3642c");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -29,10 +28,6 @@ const Contact = () => {
   };
   return (
     <div className="contact">
-      {/* <div className="contact-title">
-        <h1>Get in touch</h1>
-        <img src={theme_pattern} alt="" />
-      </div> */}
       <div className="contact-section">
         <div className="contact-left">
           <h1>Let's talk</h1>

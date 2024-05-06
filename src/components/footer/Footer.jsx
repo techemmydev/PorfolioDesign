@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.css";
-import footer_logo from "/imageFolder/footer_logo.svg";
 import user_icon from "/imageFolder/user_icon.svg";
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "e9c5c15d-a128-461b-8794-58c846829f33");
+    formData.append("access_key", "1a7580f3-2d51-4bb8-b64a-bf5778a3642c");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -30,7 +29,6 @@ const Footer = () => {
     <div id="footer" className="footer">
       <div className="footer-top">
         <div className="footer-top-left">
-          {/* <img src={footer_logo} alt="" /> */}
           <div className="myname">
             <h1>Olawunmi</h1>
           </div>
@@ -42,7 +40,7 @@ const Footer = () => {
           <form action="  " onSubmit={onSubmit}>
             <div className="footer-email-input">
               <img src={user_icon} alt="" />
-              <input type="text" placeholder="Enter you email" />
+              <input type="email" placeholder="Enter your email" name="email" />
             </div>
             <button type="submit" className="contact-submit">
               Subscribe

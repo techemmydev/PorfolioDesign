@@ -1,24 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Aboutpage.css";
 import profile_img from "/imageFolder/profile_img.svg";
-// import { init } from "ityped";
 import Typewriter from "typewriter-effect";
 
 const Aboutpage = () => {
-  // const textRef = useRef();
-
-  // useEffect(() => {
-  //   console.log(textRef.current);
-  //   init(textRef.current, {
-  //     showCursor: true,
-  //     backDelay: 1500,
-  //     backSpeed: 60,
-  //     strings: ["Frontend Developer", "Designer", "Freelancer"],
-  //   });
-  // }, []);
-  {
-    /* <span ref={textRef}></span> */
-  }
   return (
     <div id="home" className="hero">
       <img src={profile_img} alt="" />
