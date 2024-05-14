@@ -7,7 +7,7 @@ const Aboutpage = () => {
   return (
     <div id="home" className="hero">
       <img src={profile_img} alt="" />
-      <h1>I'm Olawunmi Olatunji based in Nigeria</h1>
+      <h1>I'm Emmanuel Chukwuma based in Nigeria</h1>
       <div className="about-text">
         I'm a
         <Typewriter
@@ -17,8 +17,7 @@ const Aboutpage = () => {
             loop: true,
           }}
         />
-        with 2 years of experience in multiple companies like Bulb Africa,
-        Eschools
+        with 2 years of experience in the Bulb Africa
       </div>
 
       <div className="hero-action">
