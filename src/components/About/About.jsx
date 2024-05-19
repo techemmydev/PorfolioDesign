@@ -1,6 +1,6 @@
 import "./About.css";
 import theme_pattern from "/imageFolder/theme_pattern.svg";
-import profile_img from "/imageFolder/profile.jpg";
+import profile_img from "/imageFolder/finalimage.jfif";
 import Typewriter from "typewriter-effect";
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
             <Typewriter
               options={{
                 strings: [
-                  " I am an experienced Frontend Developer with over a decode of professional expertise in the field. Throughout my career, I have  the priviledge of collaberating with prestigious organisations, contirbuting to their success and growth.  ",
+                  " Experienced Frontend Developer Passionate about Driving Innovation and Solving Complex  Problems. With a proven track record in software development, I bring a unique blend of technical  expertise, creativity, and problem-solving skills to every project. My journey in software   development has been marked by a commitment to excellence, a drive for innovation, and a passion  for making a meaningful impact through technology.  ",
                 ],
 
                 autoStart: true,
@@ -35,7 +35,8 @@ const About = () => {
             <p>
               My passion for frontend development is not only reflected in my
               extensive experience but also in the enthusiam and dedication I
-              bring to each project{" "}
+              bring to each project Let's connect and explore opportunities to
+              collaborate on impactful projects!{" "}
             </p>
           </div>
           <div className="about-skills">

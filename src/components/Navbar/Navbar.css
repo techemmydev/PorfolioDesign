@@ -25,6 +25,10 @@
   cursor: pointer;
   transition: 0.5;
 }
+.nav-connect a {
+  color: white;
+  text-decoration: none;
+}
 .nav-connect:hover {
   transform: scale(1.05);
 }

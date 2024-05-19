@@ -48,7 +48,7 @@
 .contact-left p {
   max-width: 550px;
   color: #d8d8d8;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 35px;
 }
 .contact-details {
@@ -81,8 +81,10 @@
   padding-left: 20px;
   border-radius: 4px;
   background: #32323c;
-  font-family: outfit;
-  font-size: 20px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 15px;
+  color: white;
+  outline-color: unset;
 }
 .contact-right textarea {
   width: 650px;
@@ -91,7 +93,8 @@
   border-radius: 4px;
   background: #32323c;
   color: #a0a0a0;
-  font-size: 20px;
+  font-size: 15px;
+  outline-color: unset;
 }
 .contact-submit {
   border: none;
@@ -143,6 +146,8 @@
   }
   .contact-left h1 {
     font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
   }
   .contact-left p {
     font-size: 11px;
@@ -158,7 +163,7 @@
   }
 
   .contact-right input {
-    width: unset;
+    width: 90%;
   }
   .contact-right input::placeholder {
     font-size: 12px;

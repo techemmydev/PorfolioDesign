@@ -1,7 +1,10 @@
 import React from "react";
 import "./footer.css";
 import user_icon from "/imageFolder/user_icon.svg";
-
+import { MdOutlineMail } from "react-icons/md";
+import { FiPhone } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 const Footer = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -23,6 +26,7 @@ const Footer = () => {
 
     if (res.success) {
       alert(" your Email was Successfully sent ", res);
+      event.target.reset();
     }
   };
   return (
@@ -30,10 +34,11 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-top-left">
           <div className="myname">
-            <h1>Olawunmi</h1>
+            <h1>Emmanuel</h1>
           </div>
           <p>
-            I am a frontend developer from Nigeria with 2 years of experience
+            Let's connect and explore opportunities to collaborate on impactful
+            projects!
           </p>
         </div>
         <div className="footer-top-right">
@@ -51,12 +56,41 @@ const Footer = () => {
       <hr />
       <div className="footer-bottom">
         <p className="footer-bottom-left">
-          &#169; 2024 Beejay Ola. All rights and reserved.
+          &#169; 2024 Emmydev. All rights and reserved.
         </p>
         <div className="footer-bottom-right">
-          <p>08065592378</p>
-          <p>Email address</p>
-          <p>github Address</p>
+          <p>
+            {" "}
+            <span>
+              <FiPhone />
+            </span>
+            08065592378
+          </p>
+          <p>
+            <span>
+              <MdOutlineMail />
+            </span>{" "}
+            gabrielemmanuelchukwuma@gmail.com
+          </p>
+          <p>
+            <a href=" https://github.com/techemmydev" target="blank">
+              <span>
+                <FaGithub />
+              </span>
+              github Address
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/emmanuel-chukwuma-96744221a/"
+              target="blank"
+            >
+              <span>
+                <FaLinkedin />
+              </span>
+              Linkedin{" "}
+            </a>
+          </p>
         </div>
       </div>
     </div>

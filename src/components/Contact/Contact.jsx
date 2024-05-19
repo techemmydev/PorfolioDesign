@@ -24,6 +24,7 @@ const Contact = () => {
 
     if (res.success) {
       alert(" your Email was Successfully sent ", res);
+      event.target.reset();
     }
   };
   return (
@@ -40,15 +41,15 @@ const Contact = () => {
           <div className="contact-details">
             <div className="contact-detail">
               <img src={mail_icon} alt="" />
-              <p>greatstackdev@gmail.com</p>
+              <p>gabrielemmanuelchukwuma@gmail.com</p>
             </div>
             <div className="contact-detail">
               <img src={call_icon} alt="" />
-              <p>+2348034244528</p>
+              <p>+2348065592378 || 07041363375</p>
             </div>
             <div className="contact-detail">
               <img src={location_icon} alt="" />
-              <p>CA, United State.</p>
+              <p>Lagos, Nigeria.</p>
             </div>
           </div>
         </div>
@@ -62,6 +63,7 @@ const Contact = () => {
             name="message"
             placeholder="Enter your message"
             rows="8"
+            style={{ resize: "none" }}
           ></textarea>
           <button type="submit" className="contact-submit">
             Submit

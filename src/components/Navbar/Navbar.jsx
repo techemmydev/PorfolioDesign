@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./Navbar.css";
-import logo from "/imageFolder/logo.svg";
+
 import underline from "/imageFolder/nav_underline.svg";
 import menu_open from "/imageFolder/menu_open.svg";
 import menu_close from "/imageFolder/menu_close.svg";
@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="myname">
         <h1>Emmanuel</h1>
       </div>
-      {/* <img src={logo} alt="" /> */}
+
       <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
       <ul ref={menuRef} className="nav-menu">
         <img
@@ -53,8 +53,15 @@ const Navbar = () => {
           {menu === "contact" ? <img src={underline} alt="" /> : <></>}
         </li>
       </ul>
-      <div className="nav-connect" onClick={() => scrollTo(5300, "connect")}>
-        Connect with me
+      {/* <div className="nav-connect" onClick={() => scrollTo(5300, "connect")}></div> */}
+      <div className="nav-connect">
+        <a
+          href="https://www.linkedin.com/in/emmanuel-chukwuma-96744221a/"
+          target="blank"
+        >
+          {" "}
+          Connect with me
+        </a>
       </div>
     </div>
   );
