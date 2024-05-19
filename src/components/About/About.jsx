@@ -2,6 +2,7 @@ import "./About.css";
 import theme_pattern from "/imageFolder/theme_pattern.svg";
 import profile_img from "/imageFolder/finalimage.jfif";
 import Typewriter from "typewriter-effect";
+
 const About = () => {
   return (
     <div id="about" className="about">
