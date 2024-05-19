@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./MyWork.css";
 // import mywork_data from "../../../public/imageFolder/mywork_data";
 // import arrow_icon from "/imageFolder/arrow_icon.svg";
 import theme_pattern from "/imageFolder/theme_pattern.svg";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-const MyWork = ({ slides }) => {
+const MyWork = ({ slides, autoplay = true, interval = 3000 }) => {
   const slideStyles = {
     width: "100%",
     height: "100%",
@@ -58,6 +58,8 @@ const MyWork = ({ slides }) => {
     marginTop: "20px",
   };
 
+  const [isAnimating, setIsAnimating] = useState(autoplay); // State for animation
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -75,8 +77,17 @@ const MyWork = ({ slides }) => {
   const slideStylesWidthBackground = {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex].url})`,
+    transition: `transform ${interval / 1000}s ease-in-out`, // Added transition
   };
+  useEffect(() => {
+    if (isAnimating) {
+      const intervalId = setInterval(() => {
+        goToNext();
+      }, interval);
 
+      return () => clearInterval(intervalId); // Cleanup on unmount
+    }
+  }, [isAnimating, goToNext, interval]); // Dependencies for useEffect
   return (
     <React.Fragment>
       <div className="mywork-title">
