@@ -18,7 +18,7 @@ const mywork_data = [
     w_no: 2,
     w_name: "Eschool project",
     w_img: project2_img,
-    linkto: "https://e-schoolproject.vercel.app/",
+    linkto: "https://e-school-platform-eight.vercel.app/#/pricing",
   },
   {
     w_no: 3,
