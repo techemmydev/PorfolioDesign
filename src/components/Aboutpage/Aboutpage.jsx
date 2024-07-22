@@ -50,7 +50,14 @@ const Aboutpage = () => {
           >
             Connect with me
           </div>
-          <div className="hero-resume">My resume</div>
+          <div className="hero-resume">
+            <a
+              href="https://drive.google.com/file/d/1DoNSA9Xze6JeoWmvypZpBV8HFGo3yTbr/view"
+              target="_blank"
+            >
+              My resume
+            </a>
+          </div>
         </div>
       </div>
     </motion.div>
