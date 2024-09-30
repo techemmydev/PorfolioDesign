@@ -5,6 +5,7 @@ import "./MyWork.css";
 import theme_pattern from "/imageFolder/theme_pattern.svg";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+
 const MyWork = ({ slides, autoplay = true, interval = 3000 }) => {
   const slideStyles = {
     width: "100%",

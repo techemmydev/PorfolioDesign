@@ -5,6 +5,8 @@ import project4_img from "/imageFolder/Macbook-Air-localhost.png";
 
 import project6_img from "/imageFolder/reduxphone.png";
 import project7_img from "/imageFolder/cleancity.png";
+import project8_img from "/imageFolder/Macbook-Air-authenticationapp-jzts.onrender.com.png";
+import project9_img from "/imageFolder/Macbook-Air-bl-project.vercel.app.png";
 
 const mywork_data = [
   {
@@ -43,6 +45,18 @@ const mywork_data = [
     w_name: "clean-city-solutions",
     w_img: project7_img,
     linkto: "https://clean-city-solutions.vercel.app/",
+  },
+  {
+    w_no: 8,
+    w_name: "Authentication Applications",
+    w_img: project8_img,
+    linkto: "https://authenticationapp-jzts.onrender.com/login",
+  },
+  {
+    w_no: 9,
+    w_name: "Better Life Fintech Application",
+    w_img: project9_img,
+    linkto: "https://bl-project.vercel.app/home/transactions",
   },
 ];
 

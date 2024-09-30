@@ -40,7 +40,7 @@ const Aboutpage = () => {
               loop: true,
             }}
           />
-          with 2 years of experience in the Bulb Africa
+          with years of experience as a Developer
         </div>
 
         <div className="hero-action" id="contact">
@@ -52,7 +52,7 @@ const Aboutpage = () => {
           </div>
           <div className="hero-resume">
             <a
-              href="https://drive.google.com/file/d/1DoNSA9Xze6JeoWmvypZpBV8HFGo3yTbr/view"
+              href="https://drive.google.com/file/d/1uFLdHUNa8s6dGKLfdtBmU3iI77Vvlp5T/view?usp=drive_link"
               target="_blank"
             >
               My resume
