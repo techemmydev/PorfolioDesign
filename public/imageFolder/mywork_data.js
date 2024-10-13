@@ -7,6 +7,7 @@ import project6_img from "/imageFolder/reduxphone.png";
 import project7_img from "/imageFolder/cleancity.png";
 import project8_img from "/imageFolder/Macbook-Air-authenticationapp-jzts.onrender.com.png";
 import project9_img from "/imageFolder/Macbook-Air-bl-project.vercel.app.png";
+import project10_img from "/imageFolder/music.png";
 
 const mywork_data = [
   {
@@ -57,6 +58,12 @@ const mywork_data = [
     w_name: "Better Life Fintech Application",
     w_img: project9_img,
     linkto: "https://bl-project.vercel.app/home/transactions",
+  },
+  {
+    w_no: 10,
+    w_name: "Better Life Fintech Application",
+    w_img: project10_img,
+    linkto: "https://musicline-two.vercel.app/",
   },
 ];
 
