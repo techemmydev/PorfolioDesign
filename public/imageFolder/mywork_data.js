@@ -61,7 +61,7 @@ const mywork_data = [
   },
   {
     w_no: 10,
-    w_name: "Better Life Fintech Application",
+    w_name: " Musiciline",
     w_img: project10_img,
     linkto: "https://musicline-two.vercel.app/",
   },
